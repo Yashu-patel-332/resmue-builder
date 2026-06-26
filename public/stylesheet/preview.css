@@ -105,3 +105,88 @@ ul li {
 .back a:hover {
     background: #042582;
 }
+
+/* ======================
+   TABLET DEVICES
+====================== */
+@media (max-width: 768px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    .res {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .contact-info,
+    .summary,
+    .education,
+    .experience,
+    .projects,
+    ul li {
+        font-size: 15px;
+    }
+}
+
+
+/* ======================
+   MOBILE DEVICES
+====================== */
+@media (max-width: 480px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .res {
+        padding: 20px 15px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        word-break: break-word;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .contact-info {
+        font-size: 14px;
+        line-height: 1.5;
+        word-break: break-word;
+    }
+
+    .summary,
+    .education,
+    .experience,
+    .projects,
+    ul li {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    ul {
+        margin-left: 18px;
+    }
+
+    .download-btn,
+    .back a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        padding: 12px;
+    }
+}

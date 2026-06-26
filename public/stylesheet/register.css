@@ -100,3 +100,79 @@ button:hover {
     text-decoration: none;
     color: #2563eb;
 }
+
+/* ======================
+   TABLET SCREEN
+====================== */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px 30px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+
+/* ======================
+   MOBILE SCREEN
+====================== */
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .container1 {
+        padding: 20px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    input,
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

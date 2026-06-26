@@ -108,3 +108,86 @@ body {
     background: #111827;
     color: white;
 }
+
+/* =========================
+   TABLET SCREEN (768px)
+========================= */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px 30px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links a {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 30px;
+    }
+}
+
+
+/* =========================
+   MOBILE SCREEN (480px)
+========================= */
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+}
