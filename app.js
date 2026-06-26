@@ -8,6 +8,9 @@ const indexRouter = require("./routes/index.js")
 const authRouter = require("./routes/authRoutes.js")
 const resumeRouter = require("./routes/resumeRoutes.js")
 const cookieParser = require("cookie-parser")
+const dns = require("dns")
+
+dns.setServers(["1.1.1.1", "8.8.8.8"])
 
 require("dotenv").config()
 
