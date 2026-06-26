@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet/preview.css">
+</head>
+
+
+<body>
+    <div class="back">
+        <a href="/dashboard">Back to Dashboard</a>
+    </div>
+    <div class="res">
+        <div class="resume-container">
+            <h1>
+                <%= resume.fullname %>
+            </h1>
+            <p class="contact-info">
+                <%= resume.email %>
+            </p>
+            <p class="contact-info">
+                <%= resume.phone %>
+            </p>
+            <p class="contact-info">
+                <%= resume.address %>
+            </p>
+            <hr>
+            <h2>Summary</h2>
+            <p class="summary">
+                <%= resume.summary %>
+            </p>
+            <h2>Skills</h2>
+            <ul>
+                <% resume.skills.forEach(skill=>{ %> <li>
+                        <%= skill %>
+                    </li>
+                    <% }) %>
+            </ul>
+            <h2>Education</h2>
+            <p class="education">
+                <%= resume.education %>
+            </p>
+            <h2>Experience</h2>
+            <p class="experience">
+                <%= resume.experience %>
+            </p>
+            <h2>Projects</h2>
+            <p class="projects">
+                <%= resume.projects %>
+            </p>
+            <a href="/download/<%= resume._id %>" class="download-btn"> Download PDF </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

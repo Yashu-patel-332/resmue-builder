@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet/edit.css">
+</head>
+
+
+<body>
+    <div class="back">
+        <a href="/dashboard">Dashboard</a>
+    </div>
+    <h1>Edit Resume</h1>
+    <form action="/resume/edit/<%= resume._id %>" method="POST">
+        <input name="fullname" value="<%= resume.fullname %>" placeholder="Full Name">
+        <input name="email" value="<%= resume.email %>" placeholder="Email">
+        <input name="phone" value="<%= resume.phone %>" placeholder="Phone">
+        <input name="address" value="<%= resume.address %>" placeholder="Address">
+        <textarea name="summary" placeholder="Professional Summary"><%= resume.summary %></textarea>
+        <input name="skills" value="<%= resume.skills.join(',') %>" placeholder="Skills">
+        <textarea name="education" placeholder="Education"><%= resume.education %></textarea>
+        <textarea name="experience" placeholder="Experience"><%= resume.experience %></textarea>
+        <textarea name="projects" placeholder="Projects"><%= resume.projects %></textarea>
+        <button> Update </button>
+    </form>
+
+
+</body>
+
+</html>

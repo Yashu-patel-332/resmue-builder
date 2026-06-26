@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet/createresume.css">
+</head>
+
+
+<body>
+    <div class="back">
+        <a href="/dashboard">Dashboard</a>
+    </div>
+    <h1>Create Resume</h1>
+    <form action="/resume/create" method="post">
+        <input name="fullname" placeholder="Full Name">
+        <input name="email" placeholder="Email">
+        <input name="phone" placeholder="Phone">
+        <input name="address" placeholder="Address">
+        <textarea name="summary" placeholder="Summary"></textarea>
+        <input name="skills" placeholder="HTML,CSS,JS">
+        <textarea name="education" placeholder="Education"></textarea>
+        <textarea name="experience" placeholder="Experience"></textarea>
+        <textarea name="projects" placeholder="Projects"></textarea>
+        <button>Save Resume </button>
+    </form>
+</body>
+
+</html>
